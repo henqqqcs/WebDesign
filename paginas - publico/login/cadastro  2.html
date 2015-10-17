@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Teste</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-login.css">
+
+
+  <script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+  <script type="text/javascript" src="../../js/bootstrapValidator.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.mask.min.js"></script>
+
+</head>
+<body>
+
+  <!-- container -->
+  <div class="container">
+
+    <!-- row -->
+    <div class="row">
+
+      <div class="col-md-2"></div>
+
+      <!-- col-md-8 -->
+      <div class="col-md-8">
+
+        <div class="cadastro-header">
+          <h2>Para fazer parte do CatálogoNet cadastre algumas informações</h2>
+        </div>
+
+        <!-- well -->
+        <div class="well form-cadastro-usuario">
+
+          <!-- row 2 -->
+          <div class="row">
+
+            <div class="col-md-2"></div>
+
+            <!-- col-md-8 -->
+            <div class="col-md-8">
+
+              <!-- form -->
+              <form id="registerForm" method="GET">
+
+
+                <!-- form-item-wrapper -->
+                <div class="form-item-wrapper">
+                  <div class="form-group">
+                    <label class="control-label" for="nome">Nome <span class="glyphicon glyphicon-asterisk"></span></label>
+                    <input class="form-control" type="text" name="nome" placeholder="Seu nome">
+                  </div>
+                </div>
+                <!-- fim form-item-wrapper -->
+
+
+                <hr/>
+                <p>Escolha uma senha para fazer login no sistema</p>
+
+                <!-- form-item-wrapper -->
+                <div class="form-item-wrapper">
+                  <button id="registerBtn" type="submit" class="pull-right btn btn-primary">Cadastrar <span class="glyphicon glyphicon-triangle-right"></span></button>
+                </div>
+                <!-- fim form-item-wrapper -->
+
+              </form>
+              <!-- fim form -->
+
+            </div>
+            <!-- fim col-md-6 -->
+
+            <div class="col-md-2"></div>
+
+          </div> 
+          <!-- fim row 2 -->
+
+
+        </div>
+        <!-- fim well -->
+
+      </div>
+      <!-- fim col-md-8 -->
+
+      <div class="col-md-2"></div>
+
+    </div>
+    <!-- fim row -->
+
+
+
+  </div>
+  <!-- fim container -->
+
+
+
+
+  <!-- validate script 2 --> 
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#registerForm').bootstrapValidator({
+        message: 'Esse valor não é válido.',
+        feedbackIcons: {
+          valid: 'glyphicon glyphicon-ok',
+          invalid: 'glyphicon glyphicon-remove',
+          validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+          nome: {
+            validators: {
+              stringLength: {
+                min: 4,
+                max: 55,
+                message: 'Esse nome não parece válido.'
+              }
+              // ,
+              // notEmpty: {
+              //   message: 'Esse campo é obrigatório.'
+              // }
+            }
+          }
+
+
+
+      }
+        
+        });
+
+  });
+</script> 
+<!-- validate script 2 --> 
+
+<!-- mask input --> 
+<script>
+  $(document).ready(function(){
+    $('#telefone').mask('(00) 0000-0000');
+  });
+</script> 
+<!-- mask input -->
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teste</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap.css">
+
+
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-restrito.css">
+
+
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+</head>
+<body>
+
+	<!-- content-wrapper -->
+	<div id="content-restrito-wrapper">
+
+		<!-- conteudo -->
+<!-- 		<div class="header-usuario-info">
+			<div class="container">
+				<h1>Olá, Henrique Gonçalves</h1><br>
+			</div>
+		</div> -->
+		<!-- fim conteudo -->
+
+<!-- 		<div class="container">
+			<div class="painel-menu-wraper">	
+				<ul class="nav nav-pills">
+				  <li role="presentation" class="active"><a href="#">Resumo</a></li>
+				  <li role="presentation"><a href="#">Criar anúncio</a></li>
+				  <li role="presentation"><a href="#">Meus anúncios</a></li>
+				  <li role="presentation"><a href="#">Meus planos</a></li>
+				  <li role="presentation"><a href="#">Meus pedidos</a></li>
+				  <li role="presentation"><a href="#">Perfil</a></li>
+				</ul>
+			</div>
+		</div> -->
+
+
+		<div class="container">
+			<nav class="navbar navbar-pills" role="navigation">    
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <span class="navbar-brand navbar-brand-hidden">Menu</span>
+			    </div>  
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    	<ul class="nav nav-pills head-menu">
+			                        
+			        	<li><a href="#" id="welcome">Resumo</a></li>
+			            <li class="active"><a href="#" id="kitchen">Criar anúncio</a></li>
+			            <li><a href="#" id="programma">Meus anúncios</a></li>
+			            <li><a href="#" id="foodart" >Meus planos</a></li>
+			            <li><a href="#" id="foodart" >Meus pedidos</a></li>
+			    	</ul>
+			    </div>
+			  </nav>
+
+        </div>
+
+<script type="text/javascript">
+	//Stack menu when collapsed
+$('#bs-example-navbar-collapse-1').on('show.bs.collapse', function() {
+    $('.nav-pills').addClass('nav-stacked');
+});
+
+//Unstack menu when not collapsed
+$('#bs-example-navbar-collapse-1').on('hide.bs.collapse', function() {
+    $('.nav-pills').removeClass('nav-stacked');
+});
+</script>
+
+
+		<div id="pagina-restrito-conteudo">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12">
+						<ol class="breadcrumb breadcrumb-white">
+						  <li><a href="#">Home</a></li>
+						  <li><a href="#">Meus anúncios</a></li>
+						  <li class="active">PIZZARIA</li>
+						</ol>
+					</div>		
+					<div class="col-md-12">
+						<div class="painel-restrito-item item-anuncio-header">
+
+							<div class="row">
+							
+								<div class="col-md-6">
+			
+									<h2>PIZARIA PIZZA CESAR</h2>
+									<p>Brasília, Distrito Federal</p>
+									<p>Vicene pires rua 05 chacara 270 lote 22</p>
+									
+									<p>(31) 1233-1233</p>
+								
+								</div>
+								<div class="col-md-6">
+									<div class="row">
+										
+										<div class="col-md-6">
+											<p><a href="#" class="btn btn-success btn-lg">Publicar</a></p><br/>
+											<p><a href="#" class="btn btn-warning btn-lg">Visualizar</a></p>
+											
+									
+														
+										</div>
+										<div class="col-md-6">
+											<div class="alert alert-danger">
+											<p><strong>Status</strong> <br/> Desativado <span class="glyphicon glyphicon-remove"></span></p>
+
+											<p><strong>Plano</strong> <br/> Plano Gratuito</p>
+											
+											<p><strong>Data finalização</strong> <br/> 10/10/2015</p>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					
+					<div class="col-md-6">
+<!-- 						<div class="painel-restrito-item item-estatisticas">
+							<h2>Estatísticas</h2>
+							<p>Veja aqui a quantidade de vizualizações do seu anúncio</p>
+						</div> -->
+						<div class="painel-restrito-item item-informacoes">
+							<div class="pull-right"><a href="">Editar</a></div>
+							<h2>Informações</h2>
+							<p>Atualize as informações do seu anúncio</p><br/>
+							<ul>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Título</p>
+									<p class="col-xs-9">PIZZARIA PIZZA</p>
+								</li>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Telefone</p>
+									<p class="col-xs-9">(23) 2342-2344</p>
+								</li>
+
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Telefone</p>
+									<p class="col-xs-9">(23) 2342-2344</p>
+								</li>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Facebook</p>
+									<p class="col-xs-9">http://google.com.br</p>
+								</li>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Site</p>
+									<p class="col-xs-9">http://google.com.br</p>
+								</li>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">E-mail</p>
+									<p class="col-xs-9">http://google.com.br</p>
+								</li>
+							</ul>
+						</div>
+						<div class="painel-restrito-item item-categorias">
+							<div class="pull-right"><a href="">Editar</a></div>
+							<h2>Categoria</h2>
+							<p>Altere a categoria do seu anúncio</p>
+							<br/>
+							<ul>
+								<li class="row">	
+									<p class="col-sm-4 painel-item-label">Categoria</p>
+									<p class="col-sm-8">Restaurantes</p>
+								</li>
+								<li class="row">	
+									<p class="col-sm-4 painel-item-label">Sub-categoria</p>
+									<p class="col-sm-8">Pizzaria pizza</p>
+								</li>
+							</ul>
+							
+						</div>
+						<div class="painel-restrito-item item-palavras-chave">
+							<div class="pull-right"><a href="">Editar</a></div>
+							<h2>Palavras-chave</h2>
+							<p>Atualize as palavras-chave de busca no sistema</p>
+							<br/>
+							<p>pizzaria</p>
+							<p>pizzaria</p>
+							<p>pizzaria</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="painel-restrito-item item-localizacao">
+							<div class="pull-right"><a href="">Editar</a></div>
+							<h2>Localização</h2>
+							<p>Atualize a localização do seu anúncio</p><br/>
+							<ul>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Estado</p>
+									<p class="col-xs-9">Distrito Federal</p>
+								</li>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Cidade</p>
+									<p class="col-xs-9">Brasília</p>
+								</li>
+
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Bairro</p>
+									<p class="col-xs-9">Vicente pires</p>
+								</li>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Endereço</p>
+									<p class="col-xs-9">http://google.com. skjhdkasj dkasjhd kajsdhkajsh dkasjdhk</p>
+								</li>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">CEP</p>
+									<p class="col-xs-9">897979-876</p>
+								</li>
+								<li class="row">	
+									<p class="col-xs-3 painel-item-label">Mapa</p>
+									<p class="col-xs-9"><a href="">Google maps</a></p>
+								</li>
+							</ul>
+						</div>
+						<div class="painel-restrito-item item-imagens">
+							<div class="pull-right"><a href="">Editar</a></div>
+							<h2>Imagens</h2>
+							<p>Adicione imagens ao seu anúncio</p>
+						</div>
+
+					</div>
+
+				</div>
+			
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<!-- fim content-wrapper -->
+
+	<br/>
+	<br/>
+
+	<footer id="footer">
+		rodape
+	</footer>
+
+</body>
+</html>

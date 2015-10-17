@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teste</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap.css">
+
+
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-restrito.css">
+
+
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+</head>
+<body>
+
+	<!-- content-wrapper -->
+	<div id="content-restrito-wrapper">
+
+		<!-- conteudo -->
+<!-- 		<div class="header-usuario-info">
+			<div class="container">
+				<h1>Olá, Henrique Gonçalves</h1><br>
+			</div>
+		</div> -->
+		<!-- fim conteudo -->
+
+<!-- 		<div class="container">
+			<div class="painel-menu-wraper">	
+				<ul class="nav nav-pills">
+				  <li role="presentation" class="active"><a href="#">Resumo</a></li>
+				  <li role="presentation"><a href="#">Criar anúncio</a></li>
+				  <li role="presentation"><a href="#">Meus anúncios</a></li>
+				  <li role="presentation"><a href="#">Meus planos</a></li>
+				  <li role="presentation"><a href="#">Meus pedidos</a></li>
+				  <li role="presentation"><a href="#">Perfil</a></li>
+				</ul>
+			</div>
+		</div> -->
+
+
+		<div class="container">
+			<nav class="navbar navbar-pills" role="navigation">    
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <span class="navbar-brand navbar-brand-hidden">Menu</span>
+			    </div>  
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    	<ul class="nav nav-pills head-menu">
+			                        
+			        	<li><a href="#" id="welcome">Resumo</a></li>
+			            <li class="active"><a href="#" id="kitchen">Criar anúncio</a></li>
+			            <li><a href="#" id="programma">Meus anúncios</a></li>
+			            <li><a href="#" id="foodart">Meus planos</a></li>
+			            <li><a href="#" id="foodart" >Meus anúncios</a></li>
+			    	</ul>
+			    </div>
+			  </nav>
+
+        </div>
+
+
+
+<script type="text/javascript">
+	//Stack menu when collapsed
+$('#bs-example-navbar-collapse-1').on('show.bs.collapse', function() {
+    $('.nav-pills').addClass('nav-stacked');
+});
+
+//Unstack menu when not collapsed
+$('#bs-example-navbar-collapse-1').on('hide.bs.collapse', function() {
+    $('.nav-pills').removeClass('nav-stacked');
+});
+</script>
+
+		<div id="pagina-restrito-conteudo">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12">
+						<ol class="breadcrumb breadcrumb-white">
+						  <li><a href="#">Home</a></li>
+						  <li class="active">Meus anúncios</li>
+						</ol>
+					</div>		
+					<div class="col-md-12">
+						<div class="painel-restrito-item item-anuncio-header">
+
+							<div class="row">
+							
+								<div class="col-md-12">
+								
+									<div class="page-header">
+              							<h2>Meus anúncios</h2>
+            						</div>
+
+          							<div class="meus-anuncios-content">
+          								
+          								<ul>
+          									<li>
+          										<div class="meus-anuncios-wrapper">
+          				
+									         		  <!-- local bussiness -->
+									                  <div itemscope itemtype="http://schema.org/LocalBusiness">
+									                    <div class="logotipo">
+									                      <img src="../../img/logotipo.gif" alt="..." class="img-thumbnail" />
+									                    </div>
+									                    <h1><span itemprop="name">PIZARRIA PIZZA A BESSA</span></h1>
+
+									                    <div class="categoria">Em Pizzarias</div>
+									                    <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									                      <span itemprop="addressLocality">Brasília</span>,
+									                      <span itemprop="addressRegion">DF</span> | CEP: <span itemprop="postalCode">72110-800</span><br/>
+									                      <span class="district">Taguatinga</span>, <span itemprop="streetAddress">Quadra 15, bloco "c", loja 22</span>
+									                    </div>
+
+									                    <!-- butons area -->
+									                    <div class="buttons-wrapper">
+									                      <!-- phone button -->
+									                      <div class="phone-wrapper">
+									                        <a class="btn-anuncio btn-phone">
+									                          <span itemprop="telephone">(61) 3547-1969 </span><span class="glyphicon glyphicon-earphone"></span>
+									                        </a>
+									                      </div>
+									                      <!-- fim phone button -->
+
+									                      <div class="botao-editar">
+									                      	<a href="#" class="btn btn-success">Editar <span class="glyphicon glyphicon-pencil"></span></a>
+									                      </div>
+									                      
+
+									                    </div>
+									                    <!-- fim buttons area -->
+
+									                  </div>
+									                  <!-- fim local bussiness -->
+
+									                  <div class="clear"></div>
+
+          										</div>
+          									</li>
+          									          									<li>
+          										<div class="meus-anuncios-wrapper">
+          				
+									         		  <!-- local bussiness -->
+									                  <div itemscope itemtype="http://schema.org/LocalBusiness">
+									                    <div class="logotipo">
+									                      <img src="../../img/logotipo.gif" alt="..." class="img-thumbnail" />
+									                    </div>
+									                    <h1><span itemprop="name">PIZARRIA PIZZA A BESSA</span></h1>
+
+									                    <div class="categoria">Em Pizzarias</div>
+									                    <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									                      <span itemprop="addressLocality">Brasília</span>,
+									                      <span itemprop="addressRegion">DF</span> | CEP: <span itemprop="postalCode">72110-800</span><br/>
+									                      <span class="district">Taguatinga</span>, <span itemprop="streetAddress">Quadra 15, bloco "c", loja 22</span>
+									                    </div>
+
+									                    <!-- butons area -->
+									                    <div class="buttons-wrapper">
+									                      <!-- phone button -->
+									                      <div class="phone-wrapper">
+									                        <a class="btn-anuncio btn-phone">
+									                          <span itemprop="telephone">(61) 3547-1969 </span><span class="glyphicon glyphicon-earphone"></span>
+									                        </a>
+									                      </div>
+									                      <!-- fim phone button -->
+
+									                      <div class="botao-editar">
+									                      	<a href="#" class="btn btn-success">Editar <span class="glyphicon glyphicon-pencil"></span></a>
+									                      </div>
+									                      
+
+									                    </div>
+									                    <!-- fim buttons area -->
+
+									                  </div>
+									                  <!-- fim local bussiness -->
+
+									                  <div class="clear"></div>
+
+          										</div>
+          									</li>
+          									          									<li>
+          										<div class="meus-anuncios-wrapper">
+          				
+									         		  <!-- local bussiness -->
+									                  <div itemscope itemtype="http://schema.org/LocalBusiness">
+									                    <div class="logotipo">
+									                      <img src="../../img/logotipo.gif" alt="..." class="img-thumbnail" />
+									                    </div>
+									                    <h1><span itemprop="name">PIZARRIA PIZZA A BESSA</span></h1>
+
+									                    <div class="categoria">Em Pizzarias</div>
+									                    <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									                      <span itemprop="addressLocality">Brasília</span>,
+									                      <span itemprop="addressRegion">DF</span> | CEP: <span itemprop="postalCode">72110-800</span><br/>
+									                      <span class="district">Taguatinga</span>, <span itemprop="streetAddress">Quadra 15, bloco "c", loja 22</span>
+									                    </div>
+
+									                    <!-- butons area -->
+									                    <div class="buttons-wrapper">
+									                      <!-- phone button -->
+									                      <div class="phone-wrapper">
+									                        <a class="btn-anuncio btn-phone">
+									                          <span itemprop="telephone">(61) 3547-1969 </span><span class="glyphicon glyphicon-earphone"></span>
+									                        </a>
+									                      </div>
+									                      <!-- fim phone button -->
+
+									                      <div class="botao-editar">
+									                      	<a href="#" class="btn btn-success">Editar <span class="glyphicon glyphicon-pencil"></span></a>
+									                      </div>
+									                      
+
+									                    </div>
+									                    <!-- fim buttons area -->
+
+									                  </div>
+									                  <!-- fim local bussiness -->
+
+									                  <div class="clear"></div>
+
+          										</div>
+          									</li>
+          								</ul>
+
+
+
+          							</div>
+          																							
+								
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<!-- fim content-wrapper -->
+
+	<br/>
+	<br/>
+
+
+</body>
+</html>

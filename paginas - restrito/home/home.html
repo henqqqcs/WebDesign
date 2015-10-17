@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teste</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap.css">
+
+
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-restrito.css">
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-todos.css">
+
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+</head>
+<body>
+
+	<!-- content-wrapper -->
+	<div id="content-restrito-wrapper">
+
+		<!-- cabecalho -->
+
+	<div class="container">
+		<div class="menu-responsivo">
+			<div class="toggle-menu">
+				<span class="menu-mensagem">Menu</span>
+				<div class="pull-right">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</div>
+			</div>
+			<ul class="nav-responsivo nav-responsivo-horizontal">
+				<li class="active"><a href="">Resumo</a></li>
+				<li><a href="">Meus anúncios</a></li>
+				<li><a href="">Meus planos</a></li>
+				<li><a href="">Meus pedidos</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $(".toggle-menu").click(function(){
+		        $(".nav-responsivo").toggle(500);
+		    });
+		});
+	</script>
+
+<div id="pagina-restrito-conteudo">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="painel-restrito-item item-meus-planos">
+					<h2>Meus produtos</h2>
+					<p>Meus planos e produtos contratados</p>
+					<br/>
+					<div class="table-responsive">
+						<table class="table table-condensed table-hover">
+
+							<tr>
+								<th>Produto</th>
+								<th>Status</th>
+								<th class="text-right">Detalhes</th>
+							</tr>
+							<tr>
+								<td>Plano Grauito</td>
+								<td>Aguardando anúncio</td>
+								<td class="text-right"><a href="">Criar anúncio</a></td>
+							</tr>
+							<tr>
+								<td>Plano Grauito</td>
+								<td>Ativado <span class="glyphicon glyphicon-ok"></span></td>
+								<td class="text-right"><a href="">Detalhes</a></td>
+							</tr>
+						</table>
+					</div>
+					<p class="text-center"><a href="">Exibir todos</a></p>
+				</div>
+				<div class="painel-restrito-item item-meus-pedidos">
+					<h2>Meus pedidos</h2>
+					<p>Pedidos realizados em nossa loja</p>
+					<br/>
+					<table class="table table-condensed table-hover">
+
+						<tr>
+							<th>Produto</th>
+							<th>Status</th>
+							<th>Data</th>
+							<th class="text-right">Detalhes</th>
+						</tr>
+						<tr>
+							<td>Plano Grauito</td>
+							<td>Aguardando pagamento</td>
+							<td>10/10/2015</td>
+							<td class="text-right"><a href="">Detalhes</a></td>
+						</tr>
+
+
+					</table>
+					<p class="text-center"><a href="">Exibir todos</a></p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="painel-restrito-item item-meus-anuncios">
+					<h2>Meus anúncios</h2>
+					<p>Gerencie seus anúncios</p>
+					<br/>
+					<table class="table table-condensed table-hover">
+
+						<tr>
+							<td>PIZZARIA ONLINE</td>
+							<td class="text-right"><a href="">Editar</a> </td>
+						</tr>
+						<tr>
+							<td>PIZZARIA ONLINE</td>
+							<td class="text-right"><a href="">Editar</a> </td>
+						</tr>
+						<tr>
+							<td>PIZZARIA ONLINE</td>
+							<td class="text-right"><a href="">Editar</a> </td>
+						</tr>
+						<tr>
+							<td>PIZZARIA ONLINE</td>
+							<td class="text-right"><a href="">Editar</a> </td>
+						</tr>
+					</table>
+
+					<p class="text-center"><a href="">Exibir todos</a></p>
+
+				</div>
+				<div class="painel-restrito-item item-meus-anuncios">
+					<h2>Meus anúncios</h2>
+					<p>Você ainda não criou nenhum anúncio</p>
+					<p><a href="">Criar anúncio</a></p>
+				</div>
+				<div class="painel-restrito-item item-meus-dados">
+					<div class="pull-right"><a href="">Editar</a></div>
+					<h2>Perfil</h2>
+					<p>Atualize seus dados de cadastro</p>
+					<p>
+						Henrique gonaçlves Barreto<br/>
+						asjdhkajd<br/>
+						asdasdasdasdasd<br/>
+						kasdhkajsdhasd</p>
+					</div>
+					<div class="painel-restrito-item item-endereco">
+						<div class="pull-right"><a href="">Editar</a></div>
+						<h2>Endereço</h2>
+						<p>Atualize seu endereço</p>
+						<p>
+							Henrique gonaçlves Barreto<br/>
+							asjdhkajd<br/>
+							asdasdasdasdasd<br/>
+							kasdhkajsdhasd</p>
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+	</div>
+	<!-- fim content-wrapper -->
+
+	<br/>
+	<br/>
+
+      <footer id="footer">
+
+        <!-- container -->
+        <div class="container">
+
+          <!-- social share icons -->
+          <div class="footer-social-icons">
+            <a target="_blank" href="#"><img class="footer-social-item" src="../../Imagens/facebook-icon.gif" alt="facebook-icon" /></a>
+            <a target="_blank" href="#"><img class="footer-social-item" src="../../Imagens/twitter-icon.gif" alt="twitter-icon" /></a>
+            <a target="_blank" href="#"><img class="footer-social-item" src="../../Imagens/googleplus-icon.gif" alt="google-plus-icon" /></a>
+          </div>
+          <!-- fim social share icons -->
+
+          <!-- footer-contato -->
+          <div class="footer-contato">
+            <p class="rodape-titulo">Contato</p>
+            <div class="footer-content">
+              <p class="rodape-item"><strong>Telefone:</strong></p>
+              <p class="rodape-item">(23) 2343-2342 </p>
+              <p class="rodape-item"><strong>Email:</strong></p>
+              <p class="rodape-item">contato@catalogonet.com.br </p>
+              <br>
+              <p class="rodape-item"><button type="submit" class="btn btn-primary">Entre em contato!</button></p>
+            </div>
+          </div>
+          <!-- fim footer-contato -->
+
+          <!-- footer-info -->
+          <div class="footer-info">
+            <p class="rodape-titulo">Para Você</p>
+            <div class="footer-content">
+              <p class="rodape-item"><a href="#">Divulgue seu negócio</a></p>
+              <p class="rodape-item"><a href="#">Entre em contato</a></p>
+              <p class="rodape-item"><a href="#">Registre-se</a></p>
+              <p class="rodape-item"><a href="#">Login</a></p>
+            </div>
+            <p class="rodape-titulo">Trabalhe Conosco</p>
+            <div class="footer-content">
+              <p class="rodape-item"><a href="#">Trabalhe conosco</a></p>
+            </div>
+          </div>
+          <!-- fim footer-info -->
+
+          <!-- footer-payment -->
+          <div class="footer-payment">
+            <p class="rodape-titulo">Receba novidades e promoções</p>
+            <div class="footer-content">
+              <form>
+                <input class="form-control" placeholder="seu@email.com" />
+                <button type="submit" class="btn btn-primary btn-block">Quero Receber!</button>
+              </form>
+            </div>
+
+            <p class="rodape-titulo">Este site aceita</p>
+            <div class="footer-content">
+              <div class="footer-payment-box">
+                <img src="../../img/pagseguro-rodape.png" alt="pagseguro-icon" />
+                <img src="../../img/paypal-rodape.png" alt="paypal-icon" />
+              </div>
+            </div>
+          </div>
+          <!-- fim footer-payment -->
+
+          <div class="clear"></div>
+
+      </div>
+      <!-- fim container -->
+
+    </footer>
+</body>
+</html>

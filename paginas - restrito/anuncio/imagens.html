@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teste</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap.css">
+
+
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-restrito.css">
+
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+</head>
+<body>
+
+
+
+	<!-- content-wrapper -->
+	<div id="content-restrito-wrapper">
+
+		<!-- header -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="...">
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!-- fim header -->
+
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+
+					<div class="painel-restrito-item">
+						<div class="row">
+							<div class="col-md-12">
+							progress tracker
+							</div>
+						</div>
+						<br/>
+
+
+
+						<!-- =============================================================================== -->
+
+
+       <!-- inicio form -->
+        <c:url var="url" value="/area-da-empresa/criar-anuncio/imagens-handle"/>
+		<form action="${url}" method="POST" enctype="multipart/form-data">
+
+
+          <h3><strong>Escolha um logotipo para o seu anúncio</strong></h3>
+          <hr/>
+
+          <div class="file-input-list">
+            <ul>
+              <li>
+                <!-- inicio file-container-wrapper -->
+                <div class="file-container-wrapper">
+                  <div class="file-container" onclick="activeFileInput(this)">
+                    <div class="input-container">
+                      <span class="input-container-msg">Adicionar...</span>
+                    </div>
+                    <div style="display:none;" class="img-container">
+                      <img src="">
+                    </div>
+                    <input type="file" name="logotipo" onchange="handleFiles(this)" accept="image/*">
+                  </div>
+                  <div  style="display:none;" class="img-controls">
+                    <a class="btn btn-danger btn-xs" title="Remover imagem.." onclick="remover(this)">Remover <span class="glyphicon glyphicon-remove"></span></a>
+                  </div>
+                </div>
+                <!-- fim file-container-wrapper -->
+              </li>
+            </ul>
+          </div>
+  
+
+          <h3><strong>Fotos do seu negócio</strong> <small>Você pode adicionar até 5 fotos</small> </h3>
+          <hr/>
+
+          <div class="file-input-list">
+          <ul>
+            <li>
+              <!-- inicio file-container-wrapper -->
+              <div class="file-container-wrapper">
+                <div class="file-container" onclick="activeFileInput(this)">
+                  <div class="input-container">
+                    <span class="input-container-msg">Adicionar...</span>
+                  </div>
+                  <div style="display:none;" class="img-container">
+                    <img src="">
+                  </div>
+                  <input type="file" name="file" onchange="handleFiles(this)" accept="image/*">
+                </div>
+                <div  style="display:none;" class="img-controls">
+                  <a class="btn btn-danger btn-xs" title="Remover imagem.." onclick="remover(this)">Remover <span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+              </div>
+              <!-- fim file-container-wrapper -->
+            </li>
+            <li>
+              <!-- inicio file-container-wrapper -->
+              <div class="file-container-wrapper">
+                <div class="file-container" onclick="activeFileInput(this)">
+                  <div class="input-container">
+                    <span class="input-container-msg">Adicionar...</span>
+                  </div>
+                  <div style="display:none;" class="img-container">
+                    <img src="">
+                  </div>
+                  <input type="file" name="file" onchange="handleFiles(this)" accept="image/*">
+                </div>
+                <div  style="display:none;" class="img-controls">
+                  <a class="btn btn-danger btn-xs" title="Remover imagem.." onclick="remover(this)">Remover <span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+              </div>
+              <!-- fim file-container-wrapper -->
+            </li>
+            <li>
+              <!-- inicio file-container-wrapper -->
+              <div class="file-container-wrapper">
+                <div class="file-container" onclick="activeFileInput(this)">
+                  <div class="input-container">
+                    <span class="input-container-msg">Adicionar...</span>
+                  </div>
+                  <div style="display:none;" class="img-container">
+                    <img src="">
+                  </div>
+                  <input type="file" name="file" onchange="handleFiles(this)" accept="image/*">
+                </div>
+                <div  style="display:none;" class="img-controls">
+                  <a class="btn btn-danger btn-xs" title="Remover imagem.." onclick="remover(this)">Remover <span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+              </div>
+              <!-- fim file-container-wrapper -->
+            </li>
+            <li>
+                            <!-- inicio file-container-wrapper -->
+              <div class="file-container-wrapper">
+                <div class="file-container" onclick="activeFileInput(this)">
+                  <div class="input-container">
+                    <span class="input-container-msg">Adicionar...</span>
+                  </div>
+                  <div style="display:none;" class="img-container">
+                    <img src="">
+                  </div>
+                  <input type="file" name="file" onchange="handleFiles(this)" accept="image/*">
+                </div>
+                <div  style="display:none;" class="img-controls">
+                  <a class="btn btn-danger btn-xs" title="Remover imagem.." onclick="remover(this)">Remover <span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+              </div>
+              <!-- fim file-container-wrapper -->
+            </li>
+            <li>
+              <!-- inicio file-container-wrapper -->
+              <div class="file-container-wrapper">
+                <div class="file-container" onclick="activeFileInput(this)">
+                  <div class="input-container">
+                    <span class="input-container-msg">Adicionar...</span>
+                  </div>
+                  <div style="display:none;" class="img-container">
+                    <img src="">
+                  </div>
+                  <input type="file" name="file" onchange="handleFiles(this)" accept="image/*">
+                </div>
+                <div  style="display:none;" class="img-controls">
+                  <a class="btn btn-danger btn-xs" title="Remover imagem.." onclick="remover(this)">Remover <span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+              </div>
+              <!-- fim file-container-wrapper -->
+            </li>
+          </ul>
+          </div>
+
+
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="pull-right btn btn-primary">Próximo <span class="glyphicon glyphicon-triangle-right"></span></button>
+          </div>
+
+    </form>
+    <!-- fim form -->
+
+
+
+
+
+						<!-- ======================================= fim ========================================== -->
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+	</div>
+	<!-- fim content-wrapper -->
+
+
+	<footer id="footer">
+		rodape
+	</footer>
+
+</body>
+</html>

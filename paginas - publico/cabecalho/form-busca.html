@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Teste</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-publico.css">
+
+
+  <script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+</head>
+<body>
+
+
+ <header id="cabecalho-restrito">
+<nav class="navbar navbar-principal">
+
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="#">Catálogo<span class="navbar-brand-bold">Net</span><span class="navbar-brand-sub"></span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Divulgue seu negócio</a></li>
+        <li><a href="#">Criar Anúncio</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Minha Conta</a></li>
+        <li><a href="#">Sair</a></li>
+      </ul>
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+
+
+<script type="text/javascript">
+  $(window).scroll(function () {
+    var y = $(window).scrollTop();
+    var width = screen.width;
+    var showRes = 210;
+
+
+    if (width > 780) {
+      showRes = 130;
+    } 
+    if (width >= 981) {
+      showRes = 150;
+    }
+    if (width <= 780) {
+	    if (y > showRes) {
+	      $(".wrapper-form-busca").hide();
+	      $(".wrapper-form-busca-hidden").show();
+	      
+	    } else {
+	       $(".wrapper-form-busca").show();
+	  
+	    }
+      
+
+
+	
+	    if (y > showRes && !$('.wrapper-form-busca-hidden').hasClass('active')) {
+	        $('.wrapper-form-busca-hidden').addClass('active');
+
+          //adiciona a mensagem
+          if ($(".busca-hidden-mensagem-clique").text().length == 0) {
+            $('.busca-hidden-mensagem-clique').append('<span id="mensagem-to-apend">Clique aqui para pesquisar...</span>');
+          }
+
+	    } else if(y <= showRes && $('.wrapper-form-busca-hidden').hasClass('active')) {
+
+          //remove a mensagem
+          if ($(".busca-hidden-mensagem-clique").text().length > 0) {
+            $('#mensagem-to-apend').remove(); 
+          }
+
+
+	        $('.wrapper-form-busca-hidden').removeClass('active');
+	        $('.wrapper-form-busca').removeClass('wrapper-fixed');
+	    }
+
+	} else {
+		//resolucao maior que 780
+		  if (y > showRes && !$('.wrapper-form-busca').hasClass('active')) {
+  			 $('.wrapper-form-busca').addClass('wrapper-fixed');
+  	     $('.wrapper-form-busca').addClass('active');
+ 
+
+	   } else if(y <= showRes && $('.wrapper-form-busca').hasClass('active')) {
+	    	  $('.wrapper-form-busca').removeClass('wrapper-fixed');
+	        $('.wrapper-form-busca').removeClass('active');
+
+
+	    }
+
+	}
+
+});
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('#busca-hidden-mensagem').on('click',function(){
+     $(".wrapper-form-busca-hidden").hide();
+     $('.wrapper-form-busca').show(500);
+     $('.wrapper-form-busca').addClass('wrapper-fixed');
+     $('.wrapper-form-busca').addClass('active');
+  })
+
+
+});
+</script>
+
+
+<!-- form-busca -->
+<div style="display:block;" class="wrapper-form-busca">
+
+  <!-- container -->
+  <div class="container-fluid">
+
+      <!-- form-wrapper -->
+      <div class="form-busca-local-wrapper">
+    
+        <!-- <c:url var="busca" value="/busca/buscaRequest" /> -->
+        <!-- form -->
+        <form action="${busca}" method="POST">
+          <!-- info -->
+          <div class="form-busca">
+            <label for="input-busca" class="form-busca-label">Buscar</label> 
+            <input id="input-busca" type="text" class="form-control form-busca" value="${stringBusca}" name="busca" placeholder="O que você está procurando?">
+          </div>
+          <!-- fim info -->
+
+          <!-- local -->
+          <div class="form-local">
+            <label for="input-local" class="form-local-label">Local</label> 
+            <input id="input-local" type="text" class="form-control form-local" value="${stringLocal}" name="local" placeholder="Asa sul, Guará, etc">
+          </div>
+          <!-- fim local -->
+
+          <!-- botao -->
+          <div class="form-botao">
+            <button type="submit" class="btn btn-default btn-busca">
+              Buscar <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </div>
+          <!-- fim botao -->
+        </form>
+        <!-- fim form -->
+
+      </div>
+      <!-- fim form-wrapper -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- fim form-busca -->
+
+<!-- form-busca -->
+<div class="wrapper-form-busca-hidden">
+       <div id="busca-hidden-mensagem">
+       	<div class="busca-hidden-mensagem-clique"></div>
+      </div>
+</div>
+<!-- fim form-busca -->
+
+
+
+
+<!-- apenas para teste -->
+<style type="text/css">
+  body {
+    height:1600px;
+}
+.cabecalho {
+	height: 50px;
+	background-color: black;
+	width: 100%;
+	color: #FFF;
+	font-size: 20px;
+}
+
+</style>
+
+</body>
+</html>

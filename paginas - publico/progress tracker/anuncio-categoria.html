@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Teste</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap.css">
+
+  <!-- <link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-criacao-anuncio.css"> -->
+  <link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap-restrito-style.css">
+
+  <script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+
+</head>
+<body>
+
+<!-- popular categorias -->
+<script type="text/javascript">
+  $(document).ready(function() {
+        
+        $.getJSON('${listaEstados}', {
+          ajax : 'true'
+        }, function(data) {
+          var html = "<option value=''>-- Estado --</option>";
+          var len = data.length;
+          for (var i = 0; i < len; i++) {
+            html += '<option value="' + data[i].id + '">'
+                + data[i].nome + '</option>';
+          }
+          html += '</option>';
+          $('#estados').html(html);
+        });
+      });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() { 
+  $('#box-select-categoria').change(
+    function() {
+      
+      $("#categoria-loading").show();
+      $("#categoria-loading").hide();
+      $("#subcategoria-box").show();
+    });
+});
+</script>
+
+
+<script type="text/javascript">
+  function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+</script>
+
+
+
+<!-- container -->
+<div class="container">
+
+<!-- row-pgr-tracker -->
+<div class="row">
+  <div class="col-md-12">
+            <!-- progress bar -->
+        <div class="progress-tracker">
+          <div class="text-center hidden-sm hidden-xs">
+            <ol class="progtrckr" data-progtrckr-steps="5">
+              <li class="progtrckr-done">Informações</li><!--
+              --><li class="progtrckr-todo">Localização</li><!--
+              --><li class="progtrckr-todo">Palavras-chave</li><!--
+              --><li class="progtrckr-todo">Imagens</li><!-- 
+              --><li class="progtrckr-todo">Confirmar anúncio</li>
+            </ol>
+          </div>
+        </div>
+        <!-- /progress bar --> 
+  </div>
+</div>
+<!-- fim row pgr-tracker -->
+  
+<!-- row -->
+<div class="row">
+
+  <div class="col-md-2"></div>
+
+<!-- col-md-8 -->
+<div class="col-md-8">
+
+
+
+<h3><strong>Escolha uma categoria para o seu anúncio</strong></h3>
+<hr/>
+
+  <!-- row -->
+  <div class="row">
+  
+  <!-- form -->
+  <form>
+    
+
+
+  <!-- col-md-4-1 -->
+  <div class="col-md-6">
+  <div class="categoria-box-select box-categoria">
+    <select  id="box-select-categoria" name="categoryTree.categId" title="Escolha uma categoria" size="20" required>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+        <option>TESTE TESTE TESTE</option>
+    </select>
+    
+  </div>
+  </div>
+  <!-- fim col-md-4-1 -->
+
+  <!-- col-md-4-1 -->
+  <div class="col-md-6">
+  <div class="subcategoria-box-wrapper">
+    <img id="categoria-loading" src="../../img/ajax-loader.gif" style="display:none;">
+
+    <div id="subcategoria-box" class="categoria-box-select box-sub" style="display:none;">
+        <select id="box-select-sub-categoria" name="" title="Escolha uma categoria" size="20" required>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+          <option>TESTE TESTE TESTE</option>
+      </select>
+    </div>
+
+  </div>
+
+
+  </div>
+
+  <!-- fim col-md-4-1 -->
+
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="pull-right btn btn-primary">Próximo <span class="glyphicon glyphicon-triangle-right"></span></button>
+      </div>
+    </div>
+
+
+  </form>
+  <!-- fim form -->
+
+  </div>
+  <!--fim row  -->
+
+
+</div>
+<!-- fim col-md-8 -->
+
+  <div class="col-md-2"></div>
+
+
+</div>
+<!-- fim row -->
+
+
+</div>
+<!-- fim container -->
+
+
+<div class="modal-load-img"></div>
+</body>
+</html>

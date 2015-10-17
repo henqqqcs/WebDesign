@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teste</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-bootstrap.css">
+
+
+	<link rel="stylesheet" type="text/css" href="../../css/catalogonet-style-restrito.css">
+
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+
+</head>
+<body>
+
+
+
+	<!-- content-wrapper -->
+	<div id="content-restrito-wrapper">
+
+		<!-- header -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="...">
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!-- fim header -->
+
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+
+					<div class="painel-restrito-item">
+						<div class="row">
+							<div class="col-md-12">
+							progress tracker
+							</div>
+						</div>
+						<br/>
+
+
+
+						<!-- =============================================================================== -->
+
+
+				<h3><strong>Editar a localização do seu negócio</strong></h3>
+		      <hr/>
+
+		      <!-- inicio form -->
+		      <form id="anuncioForm" class="form-horizontal">
+
+		        <!-- form-group -->
+		        <div class="form-group">
+		          <label for="estado" class="col-sm-2 control-label">Estado <span class="glyphicon glyphicon-asterisk"></span></label>
+		          <div class="col-sm-10">
+		            <select class="form-control" disabled="disabled">
+		              <option value="DF" selected>Distrito Federal</option>
+		            </select>
+		          </div>
+		        </div>
+		        <!-- /. form-group -->
+
+		        <!-- form-group -->
+		        <div class="form-group">
+		          <label for="estado" class="col-sm-2 control-label">Cidade <span class="glyphicon glyphicon-asterisk"></span></label>
+		          <div class="col-sm-10">
+		            <select class="form-control" disabled>
+		              <option value="1" selected>Brasília</option>
+		            </select>
+		          </div>
+		        </div>
+		        <!-- /. form-group -->
+
+		        <!-- form-group -->
+		        <div class="form-group">
+		          <label for="bairros" class="col-sm-2 control-label">Bairro </label>
+		          <div class="col-sm-10">
+		            <select id="bairros" name="bairros" class="form-control" title="Choose 2-4 colors">
+		              <option value="">-- slect --</option>
+		              <option value="1">Brasília</option>
+		              <option value="1">Brasília</option>
+		              <option value="1">Brasília</option>
+		            </select>
+		          </div>
+		        </div>
+		        <!-- /. form-group -->
+
+		        <!-- form-group -->
+		        <div class="form-group">
+		          <label for="endereco" class="col-sm-2 control-label">Endereço</label>
+		          <div class="col-sm-10">
+		            <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite aqui seu endereço">
+		          </div>
+		        </div>
+		        <!-- /. form-group -->
+
+		        <!-- form-group -->
+		        <div class="form-group">
+		          <label for="cep" class="col-sm-2 control-label">CEP</label>
+		          <div class="col-sm-10">
+		            <input type="text" class="form-control" id="cep" name="cep" placeholder="99999-999">
+		          </div>
+		        </div>
+		        <!-- /. form-group -->
+
+
+		        <h3><strong>Indique a localização no mapa</strong></h3> 
+		        <p>Clique no mapa para colocar um marcador.</p>
+		        <hr/>
+		        <div class="cria-anuncio-map-wrapper">
+		          <div id="map-canvas"></div>
+		        </div>
+
+		        <input type="hidden" class="form-control" id="map-latitude">
+		        <input type="hidden" class="form-control" id="map-longitude">
+
+
+		        <!-- form-group -->
+		        <div class="form-group">
+		          <div class="col-sm-offset-2 col-sm-10">
+		            <button id="botaoContinuar" type="submit" class="pull-right btn btn-primary">Atualizar <span class="glyphicon glyphicon-triangle-right"></span></button>
+		          </div>
+		        </div>
+		        <!-- form-group -->
+
+		      </form>
+		      <!-- fim form -->
+
+
+
+
+
+						<!-- ======================================= fim ========================================== -->
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+	</div>
+	<!-- fim content-wrapper -->
+
+
+	<footer id="footer">
+		rodape
+	</footer>
+
+</body>
+</html>
